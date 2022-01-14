@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  width: 90vw;
+  width: 1200px;
   margin: 0 auto;
 }
 /* navbar part */
@@ -24,12 +24,13 @@ body {
 }
 
 .brand-name h2 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 .nav-links ul {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .nav-links ul li {
@@ -67,15 +68,19 @@ body {
   text-align: justify;
 }
 
-.banner-content button {
-  outline: 0;
-  border: 0;
+.banner-content a {
+  display: inline-block;
   padding: 10px 20px;
-  font-size: 1.1rem;
   border-radius: 40px;
   background-color: rgb(10, 8, 38);
-  color: aliceblue;
   margin-top: 20px;
+  color: aliceblue;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: transform 0.2s ease-in;
+}
+.banner-content a:hover {
+  transform: scale(1.1);
 }
 
 .banner-image {
@@ -83,6 +88,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: end;
+}
+
+.banner-image img {
+  transition: all 0.5s linear;
+}
+
+.banner-image img:hover {
+  transform: rotateY(-180deg);
+  transform-origin: top bottom;
 }
 
 /* banner part */
@@ -177,10 +191,55 @@ body {
   color: rgb(10, 8, 38);
   font-size: 18px;
   font-weight: 700;
-  align-items: end;
 }
 
 /* popular section */
+
+/* feaure-part start */
+
+.feature-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 30px;
+  padding: 20px;
+}
+
+.feature-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.feature-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.feature-content {
+  flex: 1;
+}
+
+.feature-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.feature-content p {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+.feature-content a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 40px;
+  background-color: rgb(10, 8, 38);
+  margin-top: 20px;
+  color: aliceblue;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
 
 /* footer part */
 
@@ -210,3 +269,8 @@ footer h2 {
   background-color: rgb(34, 33, 60);
 }
 /* footer part */
+
+/* media part starts here */
+
+@media (max-width) {
+}
