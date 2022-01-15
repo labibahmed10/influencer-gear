@@ -429,7 +429,7 @@ footer h2 {
     width: 50%;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.342);
-    transform: translateX(400px);
+    transform: translateY(-400px);
     transition: transform 0.2s linear;
   }
   .nav-links ul {
