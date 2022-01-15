@@ -28,6 +28,18 @@ body {
   font-size: 1.8rem;
 }
 
+#nav-toggler {
+  display: none;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.card-icon {
+  color: black;
+}
+
 .nav-links ul {
   display: flex;
   justify-content: center;
@@ -388,7 +400,42 @@ footer h2 {
   }
 
   .navbar {
-    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    justify-content: center;
+    gap: 150px;
+  }
+
+  #nav-toggler:checked ~ .nav-links {
+    transform: translateX(0);
+  }
+
+  .nav-icon {
+    display: block;
+    justify-self: flex-end;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    width: 50%;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.342);
+    transform: translateX(400px);
+    transition: transform 0.2s linear;
+  }
+
+  .nav-links ul li {
+    padding: 10px 5px;
+  }
+
+  .nav-links ul li a {
+    color: aliceblue;
+  }
+
+  .banner-content {
+    text-align: center;
   }
   .brand-name h2 {
     font-size: 1.3rem;
