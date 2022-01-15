@@ -14,6 +14,7 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+  /* padding: 15px; */
 }
 /* navbar part */
 
@@ -77,10 +78,10 @@ body {
   color: aliceblue;
   font-size: 1.1rem;
   text-decoration: none;
-  transition: transform 0.2s ease-in;
+  transition: transform 0.3s ease-in;
 }
 .banner-content a:hover {
-  transform: scale(1.1);
+  transform: scale(1.055);
 }
 
 .banner-image {
@@ -133,11 +134,15 @@ body {
 .all-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 150px;
+  grid-column-gap: 130px;
   grid-row-gap: 20px;
   place-items: center;
   text-align: justify;
   width: 100%;
+}
+
+.product-card:hover {
+  transform: scale(1.055);
 }
 
 .product-card {
@@ -145,6 +150,7 @@ body {
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0px 5px 12px 4px rgba(0, 0, 0, 0.26);
+  transition: transform 0.3s ease-in;
 }
 .product-card img {
   width: 100%;
@@ -239,6 +245,11 @@ body {
   color: aliceblue;
   font-size: 1.1rem;
   text-decoration: none;
+  transition: transform 0.3s ease-in;
+}
+
+.feature-content a:hover {
+  transform: scale(1.055);
 }
 
 /* footer part */
@@ -273,7 +284,9 @@ footer h2 {
 
 /* media part starts here */
 
-@media (max-width: 580px) {
+/* For Phone part */
+
+@media (max-width: 480px) {
   .container {
     width: 100%;
     margin: 0 auto;
@@ -388,7 +401,7 @@ footer h2 {
 
 /* responsive for ipad tablet etc */
 
-@media (min-width: 581px) and (max-width: 992px) {
+@media (min-width: 481px) and (max-width: 992px) {
   .container {
     width: 100%;
     margin: 0 auto;
@@ -407,6 +420,7 @@ footer h2 {
     flex-direction: column-reverse;
     padding: 15px;
     margin-bottom: 100px;
+    text-align: center;
   }
   .banner-content h1 {
     font-size: 42px;
@@ -510,3 +524,22 @@ footer h2 {
     font-size: 14px;
   }
 }
+
+/* footer part */
+
+/* responsive for ipad tablet etc */
+
+/* responsive for larger than ipad or something but less than 1200px  */
+
+@media (min-width: 993px) and (max-width: 1199px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .all-cards {
+    grid-column-gap: 20px;
+  }
+}
+
+/* responsive for larger than ipad or something but less than 1200px  */
