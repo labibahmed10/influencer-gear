@@ -299,14 +299,14 @@ body {
 
 .see-more a {
   text-decoration: none;
-  color: rgb(22, 17, 99);
+  color: rgb(22, 22, 121);
   font-size: 18px;
   font-weight: 700;
 }
 
 /* popular section */
 
-/* feaure-part start */
+/* feaure-part */
 
 .feature-part {
   display: flex;
@@ -359,6 +359,8 @@ body {
   transform: scale(1.055);
 }
 
+/* feaure-part */
+
 /* footer part */
 
 footer {
@@ -398,12 +400,17 @@ footer h2 {
     width: 100%;
     margin: 0 auto;
   }
+  /* nav-part */
 
   .navbar {
     padding: 10px;
     position: relative;
     justify-content: center;
     gap: 150px;
+  }
+
+  .brand-name h2 {
+    font-size: 1.3rem;
   }
 
   #nav-toggler:checked ~ .nav-links {
@@ -425,6 +432,9 @@ footer h2 {
     transform: translateX(400px);
     transition: transform 0.2s linear;
   }
+  .nav-links ul {
+    flex-direction: column;
+  }
 
   .nav-links ul li {
     padding: 10px 5px;
@@ -434,33 +444,38 @@ footer h2 {
     color: aliceblue;
   }
 
-  .banner-content {
-    text-align: center;
-  }
-  .brand-name h2 {
-    font-size: 1.3rem;
-  }
-  .nav-links ul {
-    flex-direction: column;
-  }
+  /* nav-part */
+
+  /* banner-part */
 
   .banner {
     flex-direction: column-reverse;
     padding: 10px;
     margin-bottom: 100px;
   }
+
+  .banner-content {
+    text-align: center;
+  }
+
   .banner-content h1 {
     font-size: 30px;
   }
+
   .banner-content p {
     font-size: 14px;
   }
+
   .banner-content a {
     font-size: 1rem;
   }
+
   .banner-image img {
     width: 100%;
   }
+
+  /* banner-part */
+
   /* logo-part */
 
   .logo-part {
@@ -505,9 +520,9 @@ footer h2 {
     align-items: center;
   }
 
-  /* popular section */
+  /* popular part*/
 
-  /* feaure-part start */
+  /* feaure-part  */
 
   .feature-part {
     flex-direction: column;
@@ -528,6 +543,7 @@ footer h2 {
   .feature-content a {
     font-size: 1rem;
   }
+  /* feaure-part  */
 
   /* footer part */
 
@@ -543,6 +559,8 @@ footer h2 {
   footer p {
     font-size: 10px;
   }
+
+  /* footer part */
 }
 
 /* responsive for ipad tablet etc */
@@ -553,6 +571,8 @@ footer h2 {
     margin: 0 auto;
   }
 
+  /* navbar part */
+
   .navbar {
     flex-direction: column;
     padding: 10px 0;
@@ -562,25 +582,36 @@ footer h2 {
     font-size: 1.8rem;
   }
 
+  /* navbar part */
+
+  /* banner part */
+
   .banner {
     flex-direction: column-reverse;
     padding: 15px;
     margin-bottom: 100px;
     text-align: center;
   }
+
   .banner-content h1 {
     font-size: 42px;
   }
+
   .banner-content p {
     font-size: 1.1rem;
   }
+
   .banner-content a {
     font-size: 1.3rem;
   }
+
   .banner-image img {
     width: 100%;
     margin-bottom: 10px;
   }
+
+  /* banner part */
+
   /* logo-part */
 
   .logo-part {
@@ -629,9 +660,9 @@ footer h2 {
     font-size: 1.3rem;
   }
 
-  /* popular section */
+  /*Popular part */
 
-  /* feaure-part start */
+  /* feaure-part */
 
   .feature-part {
     flex-direction: column;
@@ -655,6 +686,8 @@ footer h2 {
     font-size: 1.4rem;
   }
 
+  /* feaure-part */
+
   /* footer part */
 
   footer {
@@ -670,7 +703,6 @@ footer h2 {
     font-size: 14px;
   }
 }
-
 /* footer part */
 
 /* responsive for ipad tablet etc */
