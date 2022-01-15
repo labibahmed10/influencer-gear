@@ -62,6 +62,97 @@ body {
 
 .banner-content h1 {
   font-size: 52px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1px;
+}
+.typing {
+  white-space: nowrap;
+  position: relative;
+  color: transparent;
+}
+
+.typing::after {
+  content: "Influencer";
+  color: rgb(29, 22, 121);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  animation: typing 6s linear infinite;
+}
+
+@keyframes typing {
+  0% {
+    content: "|";
+  }
+  5% {
+    content: "I|";
+  }
+  10% {
+    content: "In|";
+  }
+  15% {
+    content: "Inf|";
+  }
+  20% {
+    content: "Infl|";
+  }
+  25% {
+    content: "Influ|";
+  }
+  30% {
+    content: "Influe|";
+  }
+  35% {
+    content: "Influen|";
+  }
+  40% {
+    content: "Influenc|";
+  }
+  45% {
+    content: "Influence|";
+  }
+  50% {
+    content: "Influencer|";
+  }
+  51%,
+  54% {
+    content: "Influencer|";
+  }
+  55% {
+    content: "Influence|";
+  }
+  60% {
+    content: "Influenc|";
+  }
+  65% {
+    content: "Influen|";
+  }
+  70% {
+    content: "Influe|";
+  }
+  75% {
+    content: "Influ|";
+  }
+  80% {
+    content: "Infl|";
+  }
+
+  85% {
+    content: "Infl|";
+  }
+  90% {
+    content: "Inf|";
+  }
+  95% {
+    content: "In|";
+  }
+  98% {
+    content: "I|";
+  }
+  100% {
+    content: "|";
+  }
 }
 
 .banner-content p {
@@ -73,7 +164,7 @@ body {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 40px;
-  background-color: rgb(22, 17, 99);
+  background-color: rgb(29, 22, 121);
   margin-top: 20px;
   color: aliceblue;
   font-size: 1.1rem;
@@ -126,9 +217,10 @@ body {
 }
 
 .popular-section h1 {
-  font-size: 28px;
+  font-size: 36px;
   padding: 15px 0;
   margin-bottom: 30px;
+  font-family: "Raleway", sans-serif;
 }
 
 .all-cards {
@@ -160,6 +252,7 @@ body {
 
 .product-card h2 {
   font-size: 1.7rem;
+  font-family: "Raleway", sans-serif;
 }
 
 .product-card p {
@@ -229,8 +322,10 @@ body {
 }
 
 .feature-content h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1px;
 }
 .feature-content p {
   font-size: 1.1rem;
@@ -257,7 +352,7 @@ body {
 footer {
   background-color: rgb(10, 8, 38);
   color: aliceblue;
-  padding: 20px 0;
+  padding: 25px 0;
   text-align: center;
   width: 100%;
 }
@@ -369,10 +464,14 @@ footer h2 {
 
   .feature-part {
     flex-direction: column;
+    text-align: center;
   }
 
   .feature-image img {
     width: 100%;
+  }
+  .feature-part p {
+    text-align: justify;
   }
 
   .feature-content h2 {
