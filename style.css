@@ -194,15 +194,6 @@ body {
   align-items: end;
 }
 
-.banner-image img {
-  transition: all 0.5s linear;
-}
-
-.banner-image img:hover {
-  transform: rotateY(-180deg);
-  transform-origin: top bottom;
-}
-
 /* banner part */
 
 /* logo-part */
@@ -406,7 +397,7 @@ footer h2 {
     padding: 10px;
     position: relative;
     justify-content: center;
-    gap: 150px;
+    gap: 140px;
   }
 
   .brand-name h2 {
